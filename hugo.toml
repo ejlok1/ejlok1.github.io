@@ -1,0 +1,69 @@
+baseURL = "https://ejlok1.github.io/"
+languageCode = "en-au"
+title = "New Paradigm"
+theme = "PaperMod"
+paginate = 10
+enableRobotsTXT = true
+buildDrafts = false
+
+[params]
+  author = "Eu Jin Lok"
+  description = "Agentic AI, Machine Learning, and the craft of building intelligent systems — by Eu Jin Lok, Kaggle Grandmaster & Senior AI Engineer at H2O.ai"
+  keywords = ["AI", "Machine Learning", "Agentic AI", "LLM", "RAG", "MCP", "Kaggle", "H2O.ai", "NLP"]
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowToc = true
+  TocOpen = false
+  defaultTheme = "dark"
+  disableThemeToggle = false
+
+  [params.homeInfoParams]
+    Title = "New Paradigm"
+    Content = """
+Welcome. I'm **Eu Jin Lok** — Kaggle Grandmaster, Senior AI Engineer at H2O.ai, and 10+ year veteran of enterprise ML across APAC.\n\nThis blog is about the paradigm shift happening right now: from classical ML to **Agentic AI**. From batch pipelines to live reasoning systems. From models as tools to models as collaborators.\n\nI write from the trenches — production deployments, enterprise use cases, and hard lessons building AI systems that actually work.
+"""
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/ejlok1"
+  [[params.socialIcons]]
+    name = "kaggle"
+    url = "https://www.kaggle.com/ejlok1"
+  [[params.socialIcons]]
+    name = "linkedin"
+    url = "https://www.linkedin.com/in/eu-jin-lok"
+  [[params.socialIcons]]
+    name = "rss"
+    url = "/index.xml"
+
+[menu]
+  [[menu.main]]
+    name = "Posts"
+    url = "/posts/"
+    weight = 10
+  [[menu.main]]
+    name = "Archive"
+    url = "/archives/"
+    weight = 20
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 30
+  [[menu.main]]
+    name = "Tags"
+    url = "/tags/"
+    weight = 40
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+[markup]
+  [markup.highlight]
+    style = "monokai"
+    lineNos = true
+  [markup.goldmark.renderer]
+    unsafe = true
